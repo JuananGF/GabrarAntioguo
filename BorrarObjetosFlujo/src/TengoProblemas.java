@@ -5,7 +5,7 @@ import java.io.ObjectOutputStream;
 
 public class TengoProblemas {
 	public static void main(String[] args) {
-		ClienteUno socio = new ClienteUno();
+		ClienteUno socio = new ClienteUno("naomi",7,true);
 		File archivo = new File("clientedos.dat");
 		ObjectOutputStream adaptador = null;
 		if (!archivo.exists())
