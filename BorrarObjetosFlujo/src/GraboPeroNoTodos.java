@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 public class GraboPeroNoTodos {
 	public static void main(String[] args) {
 		// Criterio de borrado
-		String nombre = "lula";
+		String nombre = "kevin";
 		// Usamos la clase File para poder manipular los objetos del
 		// sistema de ficheros y renombrarlos o borrarlos
 		File origen = new File("clientedos.dat");
@@ -33,11 +33,11 @@ public class GraboPeroNoTodos {
 					// Pero a partir del segundo elemento debemos cambiar el
 					// flujo
 					// En realidad no hace falta esta es la version ilustrada
-					if (primerElemento) {
-						primerElemento = false;
-						escrituraReemplazo.close();
-						escrituraReemplazo = new MiObjectOutputStream(new FileOutputStream(destino, true));
-					}
+//					if (primerElemento) {
+//						primerElemento = false;
+//						escrituraReemplazo.close();
+//						escrituraReemplazo = new MiObjectOutputStream(new FileOutputStream(destino, true));
+//					}
 				}
 			} while (true);
 
